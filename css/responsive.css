@@ -1,0 +1,110 @@
+@media (max-width:991px) {
+  /* animated navigation bar */
+  #home .navbar{
+    padding: .5rem 1rem;
+  }
+  #home .navbar .navbar-toggler {
+    height: 40px;
+    width: 50px;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  #home .navbar .navbar-toggler .navigation-icon {
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
+    background: #fea71a;
+    display: flex;
+    transition:all .5s ease-in-out;
+  }
+  #home .navbar .navbar-toggler .navigation-icon::after,
+  #home .navbar .navbar-toggler .navigation-icon::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
+    background: #fea71a;
+    transition:all .5s ease-in-out;
+  }
+  #home .navbar .navbar-toggler .navigation-icon:before{
+    transform: translateY(-8px);
+  }
+  #home .navbar .navbar-toggler .navigation-icon:after{
+    transform: translateY(8px);
+  }
+  /* animation */
+  #home .navbar .navbar-toggler.open .navigation-icon{
+    background: transparent;
+    transform: translateX(-45px);
+  }
+  #home .navbar .navbar-toggler.open .navigation-icon::before {
+    transform:rotate(45deg) translate(30px,-30px);
+  }
+  #home .navbar .navbar-toggler.open .navigation-icon::after {
+    transform:rotate(-45deg) translate(30px,30px);
+  }
+  header .header-top .navbar .nav-item .nav-link {
+    padding:.5rem 0;
+  }
+  #cta .cta-bg .doctor {
+    margin-top: -80px;
+  }
+  #our-exparts .single-expart img {
+    height: 300px;
+  }
+  #our-exparts .single-expart .expart-info {
+    left: 15px;
+    right: 15px;
+  }
+}
+@media (max-width:767px){
+  #counter .single-counter {
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2), 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  }
+  #our-exparts .single-expart {
+    margin-bottom: 130px;
+  }
+  #contact ul li{
+    margin-top: 20px;
+  }
+}
+@media (max-width:575px){
+  header .header-top .navbar .navbar-brand img{
+    width: 165px;
+  }
+  .section-title h1 {
+    font-size: 35px;
+    padding-bottom: 55px;
+  }
+  .section-description h5 {
+    font-size: 18px;
+  }
+  header .hero-area .text-area h1 {
+    font-size: 50px;
+  }
+  header .hero-area .text-area h4 {
+    font-size: 22px;
+  }
+  #counter .single-counter {
+    padding: 45px 0;
+  }
+  #cta .cta-bg h1 {
+    font-size: 35px;
+  }
+  #cta .cta-bg .doctor{
+    margin-top: -20px;
+  }
+  #live-report .live-bg {
+    padding: 20px;
+  }
+  #live-report .live-bg ul li img {
+    padding: 0 10px;
+  }
+  #live-report .live-bg ul li h1 {
+    font-size: 28px;
+  }
+}
