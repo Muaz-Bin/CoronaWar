@@ -248,7 +248,8 @@ header {
 
 /*========== call to action section =========*/
 #cta {
-  position: relative; }
+  position: relative; 
+  overflow-x:hidden ;}
   #cta .shape {
     position: absolute;
     top: -90px;
